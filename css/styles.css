@@ -5,6 +5,8 @@
   --primary-color: #212121;
   --minor-color: #757575;
   --secondary-color: #f5f4fa;
+  --icon-color: #afb1b8;
+  --color-decor: #afb1b8;
   }
 
 body {
@@ -69,6 +71,11 @@ ul {
   font-size: 16px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* -------visually-hidden-title--------- */
 .benefits-title,
 .examples-title {
@@ -124,17 +131,28 @@ ul {
 .contacts-link {
   font-style: normal;
   color: var(--minor-color);
+  display: flex;
+  fill: currentColor;
 }
 
 .current {
   color: var(--accent-color);
 }
 
+.contacts-icon-tel {
+  margin-right: 10px;
+}
+
+.contacts-icon-mail {
+  margin-right: 10px;
+}
 /* ----------------hero----------------- */
 .hero {
   background-color: #2f303a;
   text-align: center;
   padding: 200px 0px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img.jpg);
+  background-color: #C4C4C4;
 }
 
 .hero-title {
@@ -181,6 +199,25 @@ ul {
 
 .benefits-item {
   flex-basis: calc((100%-90px) / 4);
+}
+
+.benefits-icon-container {
+  background-color: var(--secondary-color);
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  padding: 25px 100px;
+}
+
+.benefits-picture {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	background-color: #f5f4fa;
+	border-radius: 4px;
+	margin-bottom: 30px;
 }
 
 .benefits-subtitle {
@@ -273,13 +310,92 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--minor-color);
+  margin-bottom: 16px;
   }
+  
+  .team-soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .team-soc-link {
+  width: 44px; 
+  height: 44px;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--color-decor);
+  }
+
+  .team-soc-link:hover,
+  .team-soc-link:focus {
+  fill: var(--normal-color);
+  background-color: currentColor;
+  }
+
+
+ 
+  
+/*-----------------clients-------------------*/
+
+.clients-list {
+	display: flex;
+	gap: 30px;
+  justify-content: center;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--color-decor);
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-decor);
+  border-radius: 4px;
+  }
+
+
+.clients-link:hover, 
+.clients-link:focus {
+fill: currentColor;
+border-color: currentColor;
+}
+
 
 /* ----------------footer-------------------- */
 .footsite {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.left-footer {
+  margin-right: 70px;
 }
 
 .address-section {
@@ -303,6 +419,40 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+
+.join-list {
+  display: flex;
+	justify-content: center;
+	gap: 10px;
+  }
+
+.join-title {
+	margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--normal-color);
+}
+
+.join-list .soc-link {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  fill: var(--normal-color);
+  background-color: rgba(255, 255, 255, 0.1);
+ }
+
+.join-list .soc-link:hover,
+.join-list .soc-link:focus {
+  background-color: currentColor;
+}
+
+
 
 /* -------------portfolio-------------- */
 
@@ -350,6 +500,16 @@ ul {
 .examples-item {
   max-width: calc((100%-60px) / 3);
   background-color: var(--normal-color);
+}
+
+.examples .link:hover,
+.examples .link:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.examples-item:hover,
+.examples-item:focus {
+ box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples-subtitle {
