@@ -148,16 +148,21 @@ ul {
 }
 /* ----------------hero----------------- */
 .hero {
+  width: 1600px;
+  margin: auto;
   background-color: #2f303a;
   text-align: center;
-  padding: 200px 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/hero-img.jpg);
-  background-color: #c4c4c4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
